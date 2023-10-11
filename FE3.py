@@ -4,7 +4,7 @@ import duckdb
 con = duckdb.connect()
 
 # Load data from CSV file into a DuckDB table
-con.execute("CREATE TABLE bank_data AS SELECT * FROM read_csv_auto('~/buckets/b1/datasets/competencia_02.csv.gz');")
+con.execute("CREATE TABLE competencia_02 AS SELECT * FROM read_csv_auto('~/buckets/b1/datasets/competencia_02.csv.gz');")
 
 
 con.execute(create or replace table competencia_02 as
