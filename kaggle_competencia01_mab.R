@@ -122,3 +122,18 @@ fwrite(tablita[, list(numero_de_cliente, Predicted)],
        file = nom_archivo,
        sep = ","
 )
+
+#______________________________________________________
+
+# Obtén la importancia de las variables del modelo
+importancia_variables <- modelo$variable.importance
+
+# Convierte la importancia en un DataFrame
+importancia_df <- as.data.frame(importancia_variables)
+
+# Muestra el DataFrame con la importancia de las variables
+print(importancia_df)
+
+library(writexl)
+write_xlsx(importancia_df, "\\Users\\mabil\\Documents\\DATA_MINING\\DMEyF\\importancia_variables_RF.xlsx")
+

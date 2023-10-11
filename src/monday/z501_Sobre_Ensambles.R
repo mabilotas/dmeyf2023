@@ -47,10 +47,11 @@ require("randomForest")
 require("lightgbm")
 
 
+
 # Poner la carpeta de la materia de SU computadora local
-setwd("/home/aleb/dmeyf23")
+setwd("C:\\Users\\mabil\\Documents\\DATA_MINING\\DMEyF\\") # Establezco el Working Directory
 # Poner sus semillas
-semillas <- c(17, 19, 23, 29, 31)
+semillas <- c(106853,191071,337511,400067,991751)
 
 # Cargamos el dataset
 dataset <- fread("./datasets/competencia_01.csv")
