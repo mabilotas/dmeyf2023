@@ -1,3 +1,8 @@
+%%bash
+pip install --upgrade duckdb
+pip install --upgrade jupysql
+pip install --upgrade duckdb-engine
+
 import duckdb
 import pandas as pd
 
