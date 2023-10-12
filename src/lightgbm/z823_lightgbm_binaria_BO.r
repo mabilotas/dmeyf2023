@@ -34,7 +34,7 @@ PARAM <- list()
 
 PARAM$experimento <- "HT8230"
 
-PARAM$input$dataset <- "./datasets/competencia_02.csv.gz"
+PARAM$input$dataset <- "./datasets/competencia_02_FEH.csv.gz"
 
 # los meses en los que vamos a entrenar
 #  mucha magia emerger de esta eleccion
@@ -50,7 +50,7 @@ PARAM$hyperparametertuning$POS_ganancia <- 273000
 PARAM$hyperparametertuning$NEG_ganancia <- -7000
 
 # Aqui poner su segunda semilla
-PARAM$lgb_semilla <- 200177
+PARAM$lgb_semilla <- 106853 #mi semilla
 #------------------------------------------------------------------------------
 
 # Hiperparametros FIJOS de  lightgbm
