@@ -26,10 +26,10 @@ PARAM$finalmodel$semilla <- 106853
 
 # hiperparametros intencionalmente NO optimos
 PARAM$finalmodel$optim$num_iterations <- 557
-PARAM$finalmodel$optim$learning_rate <- 0.0200488159171518
-PARAM$finalmodel$optim$feature_fraction <- 0.437495908962933
-PARAM$finalmodel$optim$min_data_in_leaf <- 3755
-PARAM$finalmodel$optim$num_leaves <- 873
+PARAM$finalmodel$optim$learning_rate <- 0.0337270584574435
+PARAM$finalmodel$optim$feature_fraction <- 0.869525095147255
+PARAM$finalmodel$optim$min_data_in_leaf <- 3299
+PARAM$finalmodel$optim$num_leaves <- 687
 
 
 # Hiperparametros FIJOS de  lightgbm
