@@ -19,7 +19,7 @@ PARAM$experimento <- "KA8240"
 PARAM$input$dataset <- "./datasets/competencia_02_FEH.csv.gz"
 
 # meses donde se entrena el modelo
-PARAM$input$training <- c(202012, 202101, 202102, 202103, 202104, 202105)
+PARAM$input$training <- c(202009, 202010, 202011, 202012, 202101, 202102, 202103, 202104, 202105)
 PARAM$input$future <- c(202107) # meses donde se aplica el modelo
 
 PARAM$finalmodel$semilla <- 106853
