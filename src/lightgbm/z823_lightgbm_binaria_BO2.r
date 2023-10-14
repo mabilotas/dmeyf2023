@@ -38,19 +38,19 @@ PARAM$input$dataset <- "./datasets/competencia_02_FEH.csv.gz"
 
 # los meses en los que vamos a entrenar
 #  mucha magia emerger de esta eleccion
-PARAM$input$testing <- c(202106)
-PARAM$input$validation <- c(202105)
-PARAM$input$training <- c(201905, 201906 , 201907, 202010 , 202011, 202012, 202101, 202102, 202103, 202104)
+PARAM$input$testing <- c(202105)
+PARAM$input$validation <- c(202104)
+PARAM$input$training <- c(202010 , 202011, 202012, 202101, 202102, 202103)
 
 # un undersampling de 0.1  toma solo el 10% de los CONTINUA
 PARAM$trainingstrategy$undersampling <- 0.4
-PARAM$trainingstrategy$semilla_azar <- 102191 # Aqui poner su  primer  semilla
+PARAM$trainingstrategy$semilla_azar <- 106853 # Aqui poner su  primer  semilla
 
 PARAM$hyperparametertuning$POS_ganancia <- 273000
 PARAM$hyperparametertuning$NEG_ganancia <- -7000
 
 # Aqui poner su segunda semilla
-PARAM$lgb_semilla <- 106853 #mi semilla
+PARAM$lgb_semilla <- 337511 #mi semilla
 #------------------------------------------------------------------------------
 
 # Hiperparametros FIJOS de  lightgbm
@@ -97,7 +97,7 @@ PARAM$bo_lgb <- makeParamSet(
 )
 
 # si usted es ambicioso, y tiene paciencia, podria subir este valor a 100
-PARAM$bo_iteraciones <- 50 # iteraciones de la Optimizacion Bayesiana
+PARAM$bo_iteraciones <- 75 # iteraciones de la Optimizacion Bayesiana
 
 #------------------------------------------------------------------------------
 # graba a un archivo los componentes de lista
