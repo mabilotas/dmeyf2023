@@ -32,25 +32,25 @@ options(error = function() {
 #  muy pronto esto se leera desde un archivo formato .yaml
 PARAM <- list()
 
-PARAM$experimento <- "HT8230"
+PARAM$experimento <- "HT8230_bo2"
 
 PARAM$input$dataset <- "./datasets/competencia_02_FEH.csv.gz"
 
 # los meses en los que vamos a entrenar
 #  mucha magia emerger de esta eleccion
-PARAM$input$testing <- c(202105)
-PARAM$input$validation <- c(202104)
-PARAM$input$training <- c(202010, 202011, 202012, 202101, 202102, 202103)
+PARAM$input$testing <- c(202106)
+PARAM$input$validation <- c(202105)
+PARAM$input$training <- c(201906, 201907, 201908,201909,201910,201911,201912,202011, 202012, 202101, 202102, 202103, 202104)
 
 # un undersampling de 0.1  toma solo el 10% de los CONTINUA
-PARAM$trainingstrategy$undersampling <- 1.0
-PARAM$trainingstrategy$semilla_azar <- 102191 # Aqui poner su  primer  semilla
+PARAM$trainingstrategy$undersampling <- 0.4
+PARAM$trainingstrategy$semilla_azar <- 106853 # Aqui poner su  primer  semilla
 
 PARAM$hyperparametertuning$POS_ganancia <- 273000
 PARAM$hyperparametertuning$NEG_ganancia <- -7000
 
 # Aqui poner su segunda semilla
-PARAM$lgb_semilla <- 106853 #mi semilla
+PARAM$lgb_semilla <- 191071 #mi semilla
 #------------------------------------------------------------------------------
 
 # Hiperparametros FIJOS de  lightgbm
@@ -97,7 +97,7 @@ PARAM$bo_lgb <- makeParamSet(
 )
 
 # si usted es ambicioso, y tiene paciencia, podria subir este valor a 100
-PARAM$bo_iteraciones <- 50 # iteraciones de la Optimizacion Bayesiana
+PARAM$bo_iteraciones <- 70 # iteraciones de la Optimizacion Bayesiana
 
 #------------------------------------------------------------------------------
 # graba a un archivo los componentes de lista
