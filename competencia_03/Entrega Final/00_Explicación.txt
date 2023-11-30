@@ -1,0 +1,19 @@
+Creación del dataset
+01: Genero la clase ternaria
+02: Imputo los NA en los meses rotos
+03: Hago el feature engineering histórico
+04: Después de probar el dataset con algunas optimizaciones bayesianas (BO) decido sacar los min y max del dataset porque al incluirlos obtenía una menor ganancia en la BO
+
+Prueba del modelo en 202107
+05: Genero un semillerio de 30 semillas y hago un ensemble
+06: Calculo la ganacia de las semillas y del semillerio para distinto número de envios
+07: Calculo la distribución de las ganancias de las semillas y del semillerio 
+08: Grafico las ganancias calculadas
+
+Entrega para kaggle
+09: Genero las entregas con distintos cortes para kaggle
+
+Para este modelo no se realizó BO. Los hiperparámetros se tomaron de uno de los modelos con LR1 mostrados en la clase plenaria.
+
+Se probaron otros modelos obtenidos por BO y distintos ensembles de semillerios pero evaluados en 202107 este fue el que obtubo mayor ganancia. 
+
